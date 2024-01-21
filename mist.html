@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head><title>mini-project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+  <header>
+  
+  <ul>
+    <li><a class="active" href="#about">About</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="Index1.html">Home</a></li>
+    <h2 title="Brand name">BEAUTY OF JOSEON</h2>
+  </ul>
+</header>
+
+<body>
+    <div class="containerCleanser">
+      <div class="imageCleanser">
+        <img class="imgCleanser" src="./Assets1/raoul-croes-EQGlGWMX-lc-unsplash.jpg">
+      </div>
+      <div class="textCleanser">
+            <p class="tagCleanser">Best</p>
+            <p class="productnameCleanser">Hydrating Toning Mist</p>
+            <p><b>Price:</b>Ksh 3000</p>
+            <div class="stars">
+              <img src="./Assets1/yellowFilledStar.png" alt="">
+              <img src="./Assets1/yellowFilledStar.png"  alt="">
+              <img src="./Assets1/halfFilledYellowStar.png" alt="">
+              <img src="./Assets1/emptyStar.png"  alt="">
+              <img src="./Assets1/emptyStar.png"  alt="">
+            </div>
+            <div class="description">This ultra repair cream is formulated with 5 ceramide complexes to ensure a healthy skin barrier.It is also packed with other useful ingredients like niacinamide(3%) to help with fading hyperpigmentation and peptides to smoothen fine lines and wrinkled 
+                <h3 style="color: black ;">How to use:</h3> Apply a dime size amount of the product on to cleansed face.Gently blend in evenly across the entire face. </div>
+                <button class ="addCart">Add to cart</button> 
+           </div>
+    </div>
+<!--section ya reviews-->
+
+
+
+
+<div class="mwana">
+  <h1> Customer Reviews</h1>
+ <div class="kontainer">
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="./Assets1/IMG_5148-2-1-683x1024.jpg" class="client-img" alt="">
+                    <span class="client-name">client one</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">Love this cream for summer.It so lightweight and does not feel heavy or greasy on the skin.I belive oily skin people would love this too!</p>
+                    <div class="rating">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/halfFilledBlackStar.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="./Assets1/happy-successful-woman-posing-with-folded-arms_1262-21095.jpg" class="client-img" alt="">
+                    <span class="client-name">client two</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">My oily skin loves this moisturizer.Super gentle and hydrating enough for my skin.Totally worth it!!</p>
+                    <div class="rating">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="./Assets1/simu_liu.jpg" class="client-img" alt="">
+                    <span class="client-name">client three</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">As a dry skin,i like this cream for summer times only.It does blend in well leaving a nice velvety base finish. </p>
+                    <div class="rating">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/emptyStar.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+
+    
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+const wrapper = document.querySelector('.wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
+
+let currentTestimonial = 0; // Default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `-${100 * i}%`;
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
+
+
+</script>
+
+
+
+
+
+
+    <div class="footer">
+        <h4 style="margin-top: 2em;"><a NAME="about">About</a></h4>
+        <p class="kati">Founded on 1982.</p><p  class="kati">This brand significantly undergoes proper clinical formulations.Inspired by traditional formulas.</p>
+        <p  class="kati">Located Mombasa,Kenya.</p>
+        
+        <h4><a NAME="vision">Our Vision</a></h4>
+        <p  class="kati">Founded on 1982.</p><p  class="kati">This brand significantly undergoes proper clinical formulations.Inspired by traditional formulas.</p>
+        <p  class="kati">Location <i class="bi bi-geo-alt-fill"></i> Mombasa,Kenya.</p>
+        
+        <h4><a NAME="contact">Contact Us</a></h4>
+        <p class="kati">Email us<a class="socials"href="amwanaisha453@gmail.com"><i class="bi bi-envelope" style="font-size:25px;"></i></a></p>
+        <p  class="kati">Direct message<a class="socials" href="0790455060"><i class="bi bi-chat-dots"style="font-size:25px;"></i></a></p>
+        <p  class="kati">Call us<a class="socials" href="0790455060"><i class="bi bi-telephone"style="font-size:25px;"></i></a></p>
+        
+        <p class="kati">Follow us
+        <a class="socials" href="https://www.facebook.com/profile.php?id=100066820357877"><i class="bi bi-facebook"style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://twitter.com/MwanaishaAli9?t=EFdhjlgkB3LnCfLBuqkhWA&s=08"><i class="bi bi-twitter"style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://instagram.com/lastgirlstanding0?igshid=YzgyMTM2MGM"><i class="bi bi-instagram"style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://youtube.com/@majxxx4818"><i class="bi bi-youtube" style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://www.tiktok.com/@justmaj0?_t=8aRxgn1oZXR&_r=1"><i class="material-icons" style="font-size:30px;">tiktok</i></a>
+        </p>
+        <hr>
+        <p class="kati">&copy2023 BEAUTY OF JOSEON</p>
+        
+        </div>
+        
+      
+ 
+        
+    </body>
+    </html>

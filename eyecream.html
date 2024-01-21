@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head><title>mini-project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+  <header>
+  
+  <ul>
+    <li><a class="active" href="#about">About</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="Index1.html">Home</a></li>
+    <h2 title="Brand name">BEAUTY OF JOSEON</h2>
+  </ul>
+</header>
+
+<body>
+    <div class="containerCleanser">
+      <div class="imageCleanser">
+        <img class="imgCleanser" src="./Assets1/mathilde-langevin-2ObVEZxUDlc-unsplash.jpg">
+      </div>
+      <div class="textCleanser">
+            <p class="tagCleanser">Best</p>
+            <p class="productnameCleanser">Rejuvinating Caffeine Eye Gel</p>
+            <p><b>Price:</b>Ksh 3000</p>
+            <div class="stars">
+              <img src="./Assets1/yellowFilledStar.png" alt="">
+              <img src="./Assets1/yellowFilledStar.png"  alt="">
+              <img src="./Assets1/yellowFilledStar.png" alt="">
+              <img src="./Assets1/yellowFilledStar.png"  alt="">
+              <img src="./Assets1/halfFilledYellowStar.png"  alt="">
+            </div>
+            <div class="description">A lightweight eye cream formulated with caffeine to rejuvinate and brighten dark circles around eyes.Also formulated with bird chirp and propolis to soothe and hydrate the thin skin under eyes.
+                <h3 style="color: black">How to use:</h3> Apply a quarter pea size amount of the product on to your finger.Gently and cautiously apply under and around eye skin. </div>
+           <button class ="addCart">Add to cart</button>
+           </div>
+    </div>
+<!--section ya reviews-->
+
+
+
+
+<div class="mwana">
+  <h1> Customer Reviews</h1>
+ <div class="kontainer">
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="./Assets1/beautiful-african-american-woman-260nw-483910966.jpg" class="client-img" alt="">
+                    <span class="client-name">client one</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">This eye cream really helped to clear and brighten my dark circles.The formula feels so lightweight and gentle around eyes.Deserves 5 stars!!</p>
+                    <div class="rating">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="./Assets1/asian-hairstyle-for-men-1.jpg.webp" class="client-img" alt="">
+                    <span class="client-name">client two</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">This is the one product i cant stay without.As an imnsoniac, i tend to get dark circles and eye bags often than not,so with this eye gel,i can be able to relieve some of the eye puffiness.</p>
+                    <div class="rating">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/emptyStar.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-thumb">
+                    <img src="./Assets1/Heela-Momand-818.png" class="client-img" alt="">
+                    <span class="client-name">client three</span>
+                </div>
+                <div class="card-body">
+                    <p class="review">I really liked using this eye gel for my eye bags and puffiness.It always relieves and soothes my under eyes.Loved it!!</p>
+                    <div class="rating">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/black star.png" class="star" alt="">
+                        <img src="./Assets1/halfFilledBlackStar.png" class="star" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+
+    
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+
+
+const wrapper = document.querySelector('.wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
+
+let currentTestimonial = 0; // Default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `-${100 * i}%`;
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
+
+
+</script>
+
+
+
+
+
+
+    <div class="footer">
+        <h4 style="margin-top: 2em;"><a NAME="about">About</a></h4>
+        <p class="kati">Founded on 1982.</p><p  class="kati">This brand significantly undergoes proper clinical formulations.Inspired by traditional formulas.</p>
+        <p  class="kati">Located Mombasa,Kenya.</p>
+        
+        <h4><a NAME="vision">Our Vision</a></h4>
+        <p  class="kati">Founded on 1982.</p><p  class="kati">This brand significantly undergoes proper clinical formulations.Inspired by traditional formulas.</p>
+        <p  class="kati">Location <i class="bi bi-geo-alt-fill"></i> Mombasa,Kenya.</p>
+        
+        <h4><a NAME="contact">Contact Us</a></h4>
+        <p class="kati">Email us<a class="socials"href="amwanaisha453@gmail.com"><i class="bi bi-envelope" style="font-size:25px;"></i></a></p>
+        <p  class="kati">Direct message<a class="socials" href="0790455060"><i class="bi bi-chat-dots"style="font-size:25px;"></i></a></p>
+        <p  class="kati">Call us<a class="socials" href="0790455060"><i class="bi bi-telephone"style="font-size:25px;"></i></a></p>
+        
+        <p class="kati">Follow us
+        <a class="socials" href="https://www.facebook.com/profile.php?id=100066820357877"><i class="bi bi-facebook"style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://twitter.com/MwanaishaAli9?t=EFdhjlgkB3LnCfLBuqkhWA&s=08"><i class="bi bi-twitter"style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://instagram.com/lastgirlstanding0?igshid=YzgyMTM2MGM"><i class="bi bi-instagram"style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://youtube.com/@majxxx4818"><i class="bi bi-youtube" style="font-size:25px;"></i></a>
+        
+        <a class="socials" href="https://www.tiktok.com/@justmaj0?_t=8aRxgn1oZXR&_r=1"><i class="material-icons" style="font-size:30px;">tiktok</i></a>
+        </p>
+        <hr>
+        <p class="kati">&copy2023 BEAUTY OF JOSEON</p>
+        
+        </div>
+        
+      
+ 
+        
+    </body>
+    </html>
